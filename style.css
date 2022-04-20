@@ -11,7 +11,7 @@ body {
   width: 1500px;
   height: 900px;
 
-  background: rgba(55, 170, 150, 0.74);
+  background: rgba(9, 134, 113, 0.74);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -25,7 +25,7 @@ body {
   left: 635px;
   top: 249px;
 
-  background: rgba(191, 46, 215, 0.48);
+  background: rgba(150, 126, 155, 0.48);
   width: 350px;
   border: 3px solid #000000;
   backdrop-filter: blur(5px);
@@ -37,7 +37,7 @@ body {
 
 /* display area */
 .display {
-  background: rgb(255, 255, 255, 0.266);
+  background: rgba(248, 248, 248, 0.266);
   padding: 1rem;
   border-radius: 5px;
   margin-bottom: 2rem;
@@ -130,12 +130,11 @@ body {
 }
 
 .circle {
-  background: linear-gradient(180deg, rgba(55, 170, 150, 0.74));
+  background: rgba(173, 98, 148, 0.74);
   width: 100px;
   height: 100px;
   border-radius: 50%;
   position: absolute;
-  left: 60px;
+  left: 600px;
   bottom: 35px;
-  z-index: -100;
 }
