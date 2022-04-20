@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+}
+
+.wrapper {
+  /* Desktop - 1 */
+
+  position: relative;
+  width: 1808px;
+  height: 1371px;
+
+  background: rgba(55, 170, 150, 0.74);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.calculator {
+  /* Rectangle 5 */
+
+  position: absolute;
+  width: 549px;
+  /* height: 430px; */
+
+  left: 635px;
+  top: 249px;
+
+  background: rgba(191, 46, 215, 0.48);
+  width: 350px;
+  border: 3px solid #000000;
+  backdrop-filter: blur(14px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 32px;
+  padding: 2rem;
+}
+
+/* display area */
+.display {
+  background: rgb(255, 255, 255, 0.266);
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+
+  box-shadow: 4px 4px 10px rgba(244, 242, 242, 0.2);
+  overflow: hidden;
+  text-align: end;
+}
+
+/* button area */
+.btn-area {
+  display: grid;
+  gap: 1rem;
+  /* grid-template-columns: repeat(4, 1fr); */
+  color: aliceblue;
+  grid-template-areas:
+    "ac c div multi"
+    "7 8 nine plus"
+    "four five six minus"
+    "one two three ans"
+    "dot zero zero ans";
+}
+
+.btn-area > div {
+  background: rebeccapurple;
+  justify-content: center;
+
+  display: grid;
+  align-items: center;
+  padding: 1rem 0;
+  box-shadow: 4px 4px 10px rgba(244, 242, 242, 0.2);
+}
+
+.btn-ac {
+  grid-area: ac;
+}
+.btn-c {
+  grid-area: c;
+}
+.btn-div {
+  grid-area: div;
+}
+.btn-multi {
+  grid-area: multi;
+}
+.btn-0 {
+  grid-area: zero;
+  /* grid-column: 2/4; */
+}
+.btn-1 {
+  grid-area: one;
+}
+.btn-2 {
+  grid-area: two;
+}
+.btn-3 {
+  grid-area: three;
+}
+.btn-4 {
+  grid-area: four;
+}
+.btn-5 {
+  grid-area: five;
+}
+.btn-6 {
+  grid-area: six;
+}
+.btn-7 {
+  grid-area: seven;
+}
+.btn-8 {
+  grid-area: eight;
+}
+.btn-9 {
+  grid-area: nine;
+}
+.btn-plus {
+  grid-area: plus;
+}
+.btn-minus {
+  grid-area: minus;
+}
+.btn-dot {
+  grid-area: dot;
+}
+
+.btn-ans {
+  /* grid-row: 4/6;
+  grid-column: 4/5; */
+}
