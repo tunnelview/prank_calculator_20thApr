@@ -55,7 +55,7 @@ body {
   color: aliceblue;
   grid-template-areas:
     "ac c div multi"
-    "7 8 nine plus"
+    "seven eight nine plus"
     "four five six minus"
     "one two three ans"
     "dot zero zero ans";
