@@ -135,6 +135,7 @@ body {
   height: 100px;
   border-radius: 50%;
   position: absolute;
-  left: 600px;
-  bottom: 35px;
+  left: calc(50% - 175px);
+  bottom: 5vh;
+  /* display: flex; */
 }
