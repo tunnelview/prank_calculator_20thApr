@@ -1,11 +1,11 @@
-document.querySelectorAll(".btn-area > div");
-console.log(buttons);
+const buttons = document.querySelectorAll(".btn-area > div");
 
-buttons.map((btn, i) => {
+const buttonsArg = Array.from(buttons);
+
+buttonsArg.map((btn) => {
   btn.addEventListener("click", () => {
     const val = btn.innerText;
 
-    //   const val = btn.innerText; to see the inner text of each button on console
-    console.log(btn);
+    console.log(val);
   });
 });
