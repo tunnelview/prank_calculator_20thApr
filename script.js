@@ -1,1 +1,2 @@
-console.log("hellow");
+document.querySelectorAll(".btn-area > div");
+console.log(buttons);
