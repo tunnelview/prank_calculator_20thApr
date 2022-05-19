@@ -22,6 +22,11 @@ buttonsArg.map((btn) => {
       return total();
     }
 
+    if (val === "C") {
+      const strToDisplay = strToDisplay.slice(0, -1); // slice takes two argument
+      return display(strToDisplay);
+    }
+
     strToDisplay += val;
 
     display(strToDisplay);
@@ -40,4 +45,5 @@ const display = (str) => {
 const total = () => {
   const ttl = eval(strToDisplay);
   display(ttl);
+  strToDisplay = "";
 };
