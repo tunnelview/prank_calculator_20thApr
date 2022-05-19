@@ -4,7 +4,9 @@ const buttonsArg = Array.from(buttons);
 
 const display = document.querySelector(".display");
 
-let strToDisplay = ""; //
+let strToDisplay = ""; //empty string
+
+const operators = ["+", "-", "/", "*"];
 
 buttonsArg.map((btn) => {
   btn.addEventListener("click", () => {
@@ -25,6 +27,10 @@ buttonsArg.map((btn) => {
     if (val === "C") {
       const strToDisplay = strToDisplay.slice(0, -1); // slice takes two argument
       return display(strToDisplay);
+    }
+
+    if (operators.includes(val)) {
+      alert("You Cliecked an Operator");
     }
 
     strToDisplay += val;
