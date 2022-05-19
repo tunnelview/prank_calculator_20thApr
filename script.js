@@ -7,6 +7,7 @@ const display = document.querySelector(".display");
 let strToDisplay = ""; //empty string
 
 const operators = ["+", "-", "/", "*"];
+let lastOperator = "";
 
 buttonsArg.map((btn) => {
   btn.addEventListener("click", () => {
@@ -42,6 +43,14 @@ buttonsArg.map((btn) => {
         strToDisplay += val;
 
         return display(strToDisplay);
+      }
+    }
+
+    if (val === ".") {
+      if (lastOperator) {
+        const operatorIndex = strToDisplay.lastIndexOf(lastOperator);
+        const lastNumberSet = strToDisplay.slice(operatorIndex + 1);
+        console.log(strToDisplay, lastNumberSet);
       }
     }
 
