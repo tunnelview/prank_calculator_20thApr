@@ -12,6 +12,12 @@ buttonsArg.map((btn) => {
 
     console.log(val);
 
+    if (val === "AC") {
+      strToDisplay = "";
+      display(strToDisplay);
+      return;
+    }
+
     strToDisplay += val;
 
     display(strToDisplay);
