@@ -58,6 +58,7 @@ buttonsArg.map((btn) => {
 
         console.log(strToDisplay, lastNumberSet);
       }
+      if (!lastOperator && strToDisplay.includes(".")) return; // Incase the last operator (means the first number set pressed)
     }
 
     strToDisplay += val;
