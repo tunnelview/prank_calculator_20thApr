@@ -14,7 +14,7 @@ buttonsArg.map((btn) => {
 
     if (val === "AC") {
       strToDisplay = "";
-      display(strToDisplay);
+      display();
       return;
     }
 
@@ -27,4 +27,8 @@ buttonsArg.map((btn) => {
 
 const display = (str) => {
   displayElm.innerText = str;
+};
+
+const display = (str) => {
+  displayElm.innerText = str || "0.00";
 };
