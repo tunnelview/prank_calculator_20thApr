@@ -18,6 +18,10 @@ buttonsArg.map((btn) => {
       return;
     }
 
+    if (val === "=") {
+      return total();
+    }
+
     strToDisplay += val;
 
     display(strToDisplay);
@@ -31,4 +35,9 @@ const display = (str) => {
 
 const display = (str) => {
   displayElm.innerText = str || "0.00";
+};
+
+const total = () => {
+  const ttl = eval(strToDisplay);
+  display(ttl);
 };
