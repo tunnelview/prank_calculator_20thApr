@@ -21,6 +21,11 @@ buttonsArg.map((btn) => {
     }
 
     if (val === "=") {
+      const lastChar = strToDisplay[strToDisplay.length - 1];
+      if (operators.includes(lastChar)) {
+        strToDisplay = strToDisplay.slice(0, -1);
+      }
+
       return total();
     }
 
