@@ -31,6 +31,13 @@ buttonsArg.map((btn) => {
 
     if (operators.includes(val)) {
       alert("You Cliecked an Operator");
+      const lastChar = strToDisplay[strToDisplay.length - 1];
+      if (operators.includes(lastChar)) {
+        strToDisplay = strToDisplay.slice(0, -1);
+        strToDisplay += val;
+
+        return display(strToDisplay);
+      }
     }
 
     strToDisplay += val;
