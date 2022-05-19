@@ -141,5 +141,5 @@ body {
 }
 
 .btn-area > div:hover {
-  curson: pointer;
+  cursor: pointer;
 }
