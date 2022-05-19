@@ -49,7 +49,13 @@ buttonsArg.map((btn) => {
     if (val === ".") {
       if (lastOperator) {
         const operatorIndex = strToDisplay.lastIndexOf(lastOperator);
+        // const firstPart = strToDisplay.slice(0, operatorIndex + 1);
         const lastNumberSet = strToDisplay.slice(operatorIndex + 1);
+
+        if (lastNumberSet.includes(".")) {
+          return;
+        }
+
         console.log(strToDisplay, lastNumberSet);
       }
     }
